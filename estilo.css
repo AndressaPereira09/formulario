@@ -1,0 +1,10 @@
+body {
+    background-image:url(img2.jpg);
+    background-position:center;
+    background-color: rgb(72, 34, 109);
+    color: rgb(248, 248, 206);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:1.2em;
+    font-style: oblique;
+    text-align: center;
+}

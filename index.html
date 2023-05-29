@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="icon" href="img3.png">
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        form {
+            background-color: rgba(204, 160, 244, 0.7);
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulário em HTML</h1>
+    <form action="get">
+        <fieldset>
+            <legend>Cadastro do usuário</legend>
+            <label for="cnome">Nome completo</label>
+            <br>
+            <input type="text" size="30" id="cnome" required>
+            <br>
+            <br>
+            <p>Cidade</p>
+            <input type="radio" name="cidade" id="poa" value="p">
+            <label for="poa">Porto Alegre</label>
+            <br>
+            <input type="radio" name="cidade" id="sp" value="sp">
+            <label for="sp">São Paulo</label>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Outras informações</legend>
+            <p>Qual meio de transporte você usa?</p>
+            <input type="checkbox" name="transporte 1" id="trensporte 1">
+            <label for="transporte 1">Bicicleta</label>
+            <br>
+            <input type="checkbox" name="trasporte 2" id="transporte 2">
+            <label for="transporte 2">Carro</label>
+            <br>
+            <input type="checkbox" name="transporte 3" id="transporte 3">
+            <label for="transporte 3">Ônibus</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Defina as opções na lista</legend>
+
+            <label for="Período">Período de trabalho</label>
+            <select name="período" id="Período">
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+                <option value="madrugada">Madrugada</option>
+            </select>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <label for="ccomidas">Escolha seu lanche</label>
+            <input list="comidas" name="#" id="#" placeholder="Insira aqui seu pedido">
+            <datalist id="comidas">
+                <option value="MC Brasil"></option>
+                <option value="MC Alemanha"></option>
+                <option value="MC Portugual"></option>
+                <option value="MC Inglaterra"></option>
+                <option value="MC França"></option>
+            </datalist>
+
+            <br><br>
+            <p>Exemplos de Range e Number:</p>
+            0 <input type="range">100
+            <br>
+            <input type="number">
+            <br><br>
+
+            <p style="color:rgb(68, 29, 210) ; font: size 2em;">Elogios e críticas</p>
+            <textarea style="resize:none" name="#" id="#" cols="60" rows="5"></textarea>
+            <br><br>
+
+            <input type="submit">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
